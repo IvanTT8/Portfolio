@@ -1,0 +1,328 @@
+import { DEFAULT_PHOTO_URL } from "../src/lib/site";
+import type { SiteContent } from "../src/lib/types";
+
+/**
+ * Content taken from Ivan Torrente.pdf. It seeds Sanity, and previews the site
+ * locally when no Sanity project is configured. Sanity is the source of truth
+ * once connected, so edit content in Studio rather than here.
+ */
+export const resume: SiteContent = {
+  profile: {
+    name: "Ivan Torrente",
+    role: "Full-Stack & AI-Enhanced Frontend Engineer",
+    tagline: "Translating requirements into scalable, production-ready solutions.",
+    heroTitle: "Full stack",
+    heroAccent: "engineer",
+    yearsClaim: "10+ years of experience",
+    summary: [
+      "Senior Full-Stack Engineer with 10+ years of experience designing and delivering AI-powered applications, automation platforms, agentic workflows, and complex integrations across global IT environments. Strong ability to bridge business and engineering, translating requirements into scalable, production-ready solutions.",
+      "Expert in TypeScript/JavaScript, Python, React, React Native, Next.js, Node.js, Django, Flask, FastAPI, and Azure cloud services. Experienced in AI engineering with LangChain, LangGraph, RAG architectures, vector databases, LLM integrations, and automation tools including n8n, Claude, and OpenAI.",
+      "Proven experience in technical leadership, Agile delivery, API architecture, incident management, and cross-functional collaboration. Skilled in end-to-end L1–L3 incident and ticket management, automated triage, and escalation workflows to improve reliability, reduce MTTR, and enhance customer satisfaction.",
+    ],
+    location: "Buenos Aires, Argentina",
+    workMode: "Remote",
+    timezone: "UTC−3",
+    email: "ivanttorrente@gmail.com",
+    phone: "+5493644710549",
+    linkedin: "https://www.linkedin.com/in/ivan-torrente-243878184",
+    photoUrl: DEFAULT_PHOTO_URL,
+    resumeUrl: "/resume.pdf",
+  },
+  nowCards: [
+    {
+      label: "Now",
+      title: "Senior Full Stack Engineer",
+      subtitle: "Interpublic Group (IPG), since Feb 2024",
+      href: "/about#experience",
+    },
+    {
+      label: "Focus",
+      title: "Agentic workflows & RAG",
+      subtitle: "Claude, LangGraph, Pinecone and n8n",
+      href: "/#work",
+    },
+    {
+      label: "Certified",
+      title: "PMP & Agile Scrum Master",
+      subtitle: "Project Management Institute, 2024",
+      href: "/about#education",
+    },
+  ],
+  skills: [
+    { name: "Programming Languages", items: ["TypeScript", "JavaScript", "Python"] },
+    {
+      name: "Frontend Technologies",
+      items: ["React.js", "Next.js", "Redux", "HTML5", "CSS3", "SASS", "Tailwind CSS"],
+    },
+    {
+      name: "AI & LLM Technologies",
+      items: [
+        "OpenAI",
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "RAG",
+        "LLM Fine-Tuning",
+        "Prompt Engineering",
+        "Embeddings",
+        "Semantic Search",
+        "AI Agent Orchestration",
+        "Multi-Agent Systems",
+        "Function Calling",
+        "Vapi",
+      ],
+    },
+    {
+      name: "Cloud & DevOps",
+      items: [
+        "Microsoft Azure (App Services, Functions, AKS, Blob Storage, Cosmos DB, Cognitive Services, AI Studio, DevOps, Logic Apps)",
+        "AWS (EC2, S3, RDS, Lambda, DynamoDB, IAM, CloudFormation, EKS, ECS, Bedrock)",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD (GitHub Actions, Azure DevOps, AWS CodePipeline, Jenkins)",
+        "Cloudflare",
+      ],
+    },
+    {
+      name: "Backend & API Development",
+      items: [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "TypeScript (Node.js, Express, NestJS)",
+        "RESTful APIs",
+        "GraphQL",
+        "Microservices Architecture",
+        "Authentication (JWT, OAuth, Azure AD)",
+        "Serverless Architecture (Azure Functions)",
+        "WebSockets",
+      ],
+    },
+    {
+      name: "Database Management",
+      items: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Azure Cosmos DB",
+        "AWS DynamoDB",
+        "Redis",
+        "Elasticsearch",
+        "Vector Databases (Pinecone, Weaviate)",
+      ],
+    },
+    {
+      name: "Testing & Debugging",
+      items: [
+        "TDD",
+        "Mocha",
+        "JEST",
+        "Pytest",
+        "Cypress",
+        "React Testing Library",
+        "TypeScript type testing",
+      ],
+    },
+    {
+      name: "Version Control & Collaboration",
+      items: [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "Azure Repos",
+        "Agile/Scrum",
+        "Jira",
+        "Confluence",
+        "Jira Service Management",
+        "ServiceNow",
+        "Zendesk",
+      ],
+    },
+  ],
+  experience: [
+    {
+      title: "Senior Full Stack Engineer",
+      company: "Interpublic Group (IPG)",
+      location: "New York, Remote",
+      start: "2024-02-01",
+      highlights: [
+        "Led adoption of agentic workflows integrating Claude and tools into CRM and web apps, reduced manual data entry and improved lead response.",
+        "Architected n8n automation pipelines connecting Dynamics 365, Jira and Datadog with marketing platforms, saving engineering hours. Designed agentic workflows using Claude to automate repetitive support tasks.",
+        "Designed and deployed Retrieval-Augmented Generation (RAG) systems leveraging vector databases to improve LLM response accuracy and reduce hallucinations.",
+        "Defined OKRs/KPIs for automation initiatives; decreased incident rates and increased self-service resolution.",
+        "Aligned cross-functional teams (Engineering, Data teams QA, DevOps, Marketing) to execute complex, multi-departmental initiatives.",
+        "Applied flow-based project management principles (Kanban, WIP control, cycle time analysis) as a complement to Scrum ceremonies, adapting to team maturity and delivery context.",
+        "Facilitated stakeholder alignment across technical and non-technical teams, translating operational requirements into actionable tasks with clear ownership and measurable outcomes.",
+        "Led end-to-end frontend development using TypeScript across React.js, React Native, and Next.js, delivering type-safe, self-documenting codebases with reduced runtime errors.",
+        "Built and shipped a cross-platform React Native mobile application with strict TypeScript configuration, achieving seamless iOS/Android deployment and compile-time safety across shared codebases.",
+        "Implemented AI agents using LangChain, integrating external APIs, databases, and custom tools to automate business workflows.",
+        "Integrated Pinecone vector database alongside traditional databases in a RAG system for hybrid search and Retrieval",
+        "Engineered conversational AI agents with memory and tool-calling capabilities using LangGraph, enabling persistent context across multi-turn interactions and external API integration.",
+        "Built a real-time AI chat interface with streaming responses using Server-Sent Events and TypeScript React, providing low-latency LLM interactions hosted on Azure App Services.",
+        "Implemented CI/CD pipelines for frontend applications using Azure and Vercel, automating preview deployments and production releases with multi-stage validation.",
+        "Built scalable semantic search solutions using Pinecone, enabling low-latency retrieval across millions of embedded documents.",
+      ],
+    },
+    {
+      title: "Technical Support Engineer - QA",
+      company: "InfoSys",
+      location: "Canada, Remote",
+      start: "2022-03-01",
+      end: "2024-01-31",
+      highlights: [
+        "Managed L1/L2 ticket systems using Jira, Jira Service Management, and ServiceNow under Scrum methodology.",
+        "Improved ticket classification and routing by configuring automated workflows in ServiceNow and JIRA",
+        "Administered Microsoft Dynamics 365 CRM, including API integrations (REST, JSON) data manipulation via SQL and XML",
+        "Supported data-driven operations by collaborating with teams on reporting pipelines and structured data workflows, bridging technical execution with business visibility needs",
+        "Performed manual and automated QA testing using Charles Proxy and JSON automation.",
+        "Developed, maintained, and enhanced internal tools, documentation, and workflows to improve team efficiency, tickets system and time to response",
+        "Used monitoring tools to proactively identify and resolve production issues.",
+        "Streamlined ticket handling through automation rules that prioritized, assigned tickets and priority automatically",
+        "Administered SharePoint and Docusign, ensuring secure document management.",
+      ],
+    },
+    {
+      title: "Full Stack Engineer | Technical and Functional Support - QA",
+      company: "Globant",
+      location: "Buenos Aires, Remote",
+      start: "2019-02-01",
+      end: "2022-03-31",
+      highlights: [
+        "Architected and delivered full-stack web applications using TypeScript across React frontends, and Node.js, Express and Fastify backends, ensuring type safety and consistency throughout the technology stack.",
+        "Developed Python applications supported by React and Svelte frontends and PostgreSQL databases, improving application performance through code splitting, lazy loading and Redis caching strategies.",
+        "Maintained scalable backend services using Django and Django REST Framework, building secure RESTful APIs for web and mobile applications.",
+        "Designed and developed workflows for automated customer support ticket triage and response generation using TypeScript and Azure Functions, streamlining support operations and improving response times.",
+        "Optimized cloud infrastructure and content delivery using Azure Blob Storage and Azure CDN, improving application responsiveness and user experience for global audiences.",
+        "Provided L1/L2 customer troubleshooting for software products using SQL, MySQL, and Python.",
+        "Performed functional and non-functional testing, including performance and regression testing. Established documentation standards.",
+        "Administered AWS environments, Office 365, Microsoft Dynamics CRM, Oracle and CPQ systems.",
+        "Delivered clear, professional written support in English to internal and external stakeholders across multiple regions.",
+      ],
+    },
+  ],
+  education: [
+    {
+      institution: "UADE University",
+      credential: "Software Development Degree",
+      location: "Argentina, Buenos Aires",
+      period: "Mar 2018 – Nov 2022",
+    },
+    {
+      institution: "PMI Project Management Institute",
+      credential:
+        "Project Management Professional (PMP), Agile Certification and Disciplined Agile Scrum Master",
+      location: "Remote Certification",
+      period: "2024",
+    },
+    {
+      institution: "Marketing in the digital age Certification",
+      credential: "Study abroad coursework in InHolland University (exchange program)",
+      location: "Rotterdam",
+      period: "Feb 2019 – Jul 2019",
+    },
+    {
+      institution: "UTN National Technological University",
+      credential: "Full Stack Web Programming Certification",
+      location: "Buenos Aires",
+      period: "2018",
+    },
+  ],
+  languages: [
+    { name: "English", level: "C2" },
+    { name: "Spanish", level: "Native" },
+  ],
+  selectedWork: [
+    {
+      title: "RAG & semantic search",
+      category: "AI Engineering",
+      employer: "Interpublic Group (IPG)",
+      lead: "Retrieval that improves LLM accuracy, across millions of embedded documents.",
+      description:
+        "RAG systems leveraging vector databases to improve LLM response accuracy and reduce hallucinations, with Pinecone semantic search retrieving across millions of embedded documents at low latency.",
+      points: [
+        "RAG systems: Vector databases that improve LLM response accuracy and reduce hallucinations.",
+        "Hybrid search: Pinecone integrated alongside traditional databases.",
+        "Semantic search: Low-latency retrieval across millions of embedded documents.",
+      ],
+      tech: ["RAG", "Pinecone", "Embeddings", "Semantic Search"],
+      visual: "search",
+    },
+    {
+      title: "Conversational AI agents",
+      category: "Agentic Systems",
+      employer: "Interpublic Group (IPG)",
+      lead: "Agents with memory and tool-calling, behind a real-time streaming chat interface.",
+      description:
+        "Agents with memory and tool-calling built on LangGraph, keeping context across multi-turn interactions, plus a real-time chat interface streaming LLM responses over Server-Sent Events.",
+      points: [
+        "Memory: Persistent context across multi-turn interactions, built with LangGraph.",
+        "Tool-calling: External APIs, databases and custom tools, using LangChain.",
+        "Streaming: A TypeScript React chat interface using Server-Sent Events, hosted on Azure App Services.",
+      ],
+      tech: ["LangGraph", "LangChain", "TypeScript", "React", "Azure"],
+      visual: "chat",
+    },
+    {
+      title: "Automation pipelines",
+      category: "Workflow Automation",
+      employer: "Interpublic Group (IPG)",
+      lead: "n8n pipelines and Claude workflows connecting CRM, support and marketing tools.",
+      description:
+        "n8n pipelines connecting Dynamics 365, Jira and Datadog with marketing platforms, alongside Claude-based agentic workflows that automate repetitive support tasks.",
+      points: [
+        "Integrations: Dynamics 365, Jira and Datadog connected with marketing platforms.",
+        "Agentic workflows: Claude automating repetitive support tasks.",
+        "Measurement: OKRs and KPIs that decreased incident rates and increased self-service resolution.",
+      ],
+      tech: ["n8n", "Claude", "Dynamics 365", "Jira", "Datadog"],
+      visual: "pipeline",
+    },
+    {
+      title: "Cross-platform mobile app",
+      category: "Mobile App",
+      employer: "Interpublic Group (IPG)",
+      lead: "A React Native app shipped to iOS and Android from one shared codebase.",
+      description:
+        "A React Native application shipped to iOS and Android from a shared codebase, with strict TypeScript configuration for compile-time safety.",
+      points: [
+        "Cross-platform: Seamless iOS and Android deployment from a shared codebase.",
+        "Type safety: Strict TypeScript configuration for compile-time safety.",
+        "Delivery: Frontend CI/CD with automated preview deployments and multi-stage validation.",
+      ],
+      tech: ["React Native", "TypeScript", "iOS", "Android"],
+      visual: "mobile",
+    },
+  ],
+  projects: [],
+  posts: [],
+  testimonials: [
+    {
+      name: "Sean Tung",
+      role: "Principal AI Engineer",
+      company: "R-Works LTD",
+      heading: "Turns complex challenges into production-ready solutions",
+      quote:
+        "Ivan is an outstanding Senior AI Engineer with exceptional technical expertise and problem-solving skills. He has strong experience building AI-powered applications, agentic systems, LLM integrations, RAG pipelines, and intelligent automation solutions. What sets him apart is his ability to turn complex technical challenges into practical, scalable, and production-ready solutions. He combines deep AI knowledge with full-stack engineering skills, strong architectural thinking, and excellent ownership of his work. Ivan is proactive, reliable, and highly professional. I would confidently recommend him to any team looking for a talented Senior AI Engineer who can deliver real value and take ownership of complex projects.",
+      avatarUrl: "/reviews/sean-tung.jpg",
+    },
+    {
+      name: "Victor Adolfo Valenzuela Bustos",
+      role: "IT Engineer & Data Specialist",
+      heading: "Committed, attentive and always ready to help",
+      quote:
+        "I had the opportunity to work with Iván on the project to implement an application for advertising media agencies. Iván proved to be a committed, attentive and helpful professional, always willing to lend a hand. … Iván took an active part in meetings with multidisciplinary teams from different countries, including the United States, Hong Kong and Greece, contributing to the project's progress in the region, which covered Chile, Peru, Argentina, Uruguay, Colombia, Ecuador and Mexico. His teamwork, adaptability and focus on results were key to meeting the objectives. (Translated from Spanish.)",
+      avatarUrl: "/reviews/victor-valenzuela.jpg",
+    },
+    {
+      name: "Brian Plunkett",
+      role: "Production application support",
+      heading: "Excellent self-starter with great documentation skills",
+      quote:
+        "Recommend Ivan for IT Help Desk. Worked with him for a year. Excellent self-starter, great documentation skills, and excellent customer service soft skills. I received a lot of positive feedback from internal clients during his assignment with us.",
+      avatarUrl: "/reviews/brian-plunkett.jpg",
+    },
+  ],
+  connections: [],
+};
